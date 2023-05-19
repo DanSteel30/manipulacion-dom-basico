@@ -4,17 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manipulación de DOM Básica</title>
+    <title>Eventos Manipulación de DOM Básica</title>
+    <style>
+        .color {
+            display: flex;
+            flex-direction: column;
+            background-color: #f0ed4f;
+            width: 200px;
+            height: 200px;
+            padding:  20px;
+            margin: 15px;
+            justify-content: center;
+            align-content: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            font-weight: 300;
+        }
+    </style>
 </head>
 <body>
     <h1 pantalla="pantallaPLATZI" class="H1delHTML">Manipulación de DOM Básica</h1>
 
-    <p>Esto es un parrafo</p>
-    <p class="parrafo">Esto es un parrafo con clase</p>
-    <p id="IDparrafo">Esto es un parrafo con ID</p>
+ <form id="form">
+     
+     <p> Estas dos casillas hacen concatenación de los valores agregados en los input </p>
+    
+       <input type="text" id="calculo1" placeholder="Escribe algo" value="">
+       <input type="text" id="calculo2" placeholder="Escribe algo" value="">
+    
+       <button type="button" id="boton" ">Calcular</button>
+ </form">
 
-    <input type="text" placeholder="Escribe algo" value="123456">
+    <p id="resultado"></p>
 
-    <script src="./scriptDelHtml.js"></script>
+           <p> Puedes copiar una sección del texto y aparecerá un alert que indicará que fue copiado </p>
+           
+<span id="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque, id suscipit, ullam aliquid nihil, esse libero vitae saepe praesentium est officia numquam facere dolores autem deserunt sapiente distinctio odio.
+Culpa rem voluptatum accusamus iste voluptas minus corporis. Nihil, iure nulla error neque quibusdam exercitationem maiores magnam nesciunt dolorem, vel doloribus voluptas cum blanditiis obcaecati recusandae eum fuga impedit laborum?
+Earum officia obcaecati omnis, beatae assumenda nihil fuga facilis iste sed error. Optio fugit incidunt veniam porro minima dolores architecto soluta beatae repellendus atque doloremque earum minus, cum iusto magni.</span>
+
+           <p> En esta sección: Puedes pasar el cursor por encima y cambiará su color </p>
+           
+<div id="color" class="color">Esto es un cambio de color con JS</div>
+
+
+    <script src="./eventos-AddEventLisener.js"></script>
 </body>
 </html>
